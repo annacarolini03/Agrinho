@@ -1,0 +1,112 @@
+/* Definição da fonte Inter para todo o corpo do documento */
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilos personalizados para o hero section */
+.hero-background {
+    background-image: url('uploaded:Captura de tela_2025-06-02_08-22-05.jpg-9d41c05c-0c80-47c4-9231-bf7dedc9a96e'); /* Imagem original do hero */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Estilos gerais para as seções de conteúdo */
+.content-section {
+    margin-bottom: 4rem; /* mb-16 */
+    background-color: #ffffff; /* bg-white */
+    padding: 2rem; /* p-8 */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    display: flex;
+    gap: 2rem; /* gap-8 */
+    align-items: center;
+    flex-direction: column; /* Default para mobile */
+}
+
+/* Quebra de linha para desktop para layout flex-col-md-row */
+@media (min-width: 768px) { /* md breakpoint */
+    .flex-col-md-row {
+        flex-direction: row;
+    }
+    .flex-col-md-row-reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+/* Estilos para o container de texto dentro das seções de conteúdo */
+.content-text-container {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .content-text-container {
+        width: 50%; /* md:w-1/2 */
+    }
+}
+
+/* Estilos para o container da imagem dentro das seções de conteúdo */
+.content-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 768px) {
+    .content-image-container {
+        width: 50%; /* md:w-1/2 */
+    }
+}
+
+/* Estilos para as imagens de conteúdo */
+.content-image {
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+    width: 100%; /* w-full */
+    max-height: 24rem; /* max-h-96 */
+    object-fit: cover;
+}
+@media (min-width: 768px) {
+    .content-image {
+        width: auto; /* md:w-auto */
+    }
+}
+
+/* Estilos para títulos de seção */
+.section-title {
+    font-size: 2.25rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+    color: #166534; /* text-green-700 */
+    margin-bottom: 1.5rem; /* mb-6 */
+}
+
+/* Estilos para parágrafos de seção */
+.section-paragraph {
+    margin-bottom: 1rem; /* mb-4 */
+    color: #4b5563; /* text-gray-700 */
+}
+
+/* Estilos para títulos de pontos principais */
+.points-title {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+    color: #374151; /* text-gray-800 */
+    margin-bottom: 0.75rem; /* mb-3 */
+}
+
+/* Estilos para listas de pontos principais */
+.points-list {
+    list-style-type: disc;
+    list-style-position: inside;
+    color: #4b5563; /* text-gray-700 */
+    margin-bottom: 1rem; /* space-y-2 */
+}
+.points-list li {
+    margin-bottom: 0.5rem; /* spacing between list items */
+}
+
+
+/* Estilos para texto de exemplo prático */
+.example-text {
+    margin-top: 1.5rem; /* mt-6 */
+    color: #4b5563; /* text-gray-700 */
+}
+
